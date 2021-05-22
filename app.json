@@ -12,7 +12,7 @@
       "modular",
       "media"
     ],
-  "repository": "https://github.com/AbirHasan2005/Pyro-FileStreamBot",
+  "repository": "https://github.com/P-Phreak/Pyro-FileStreamBot",
   "success_url": "/",
   "logo": "https://telegra.ph/file/9d63060a06c6fc6def1da.png",
   "website": "stream.wrench.gq",
@@ -37,7 +37,7 @@
           "description": "The BIN Channel ID. Read the readme for more info about this var"
       },
       "DATABASE_URL": {
-          "description": "MongoDB URI for saving User IDs when they first Start the Bot. We will use that for Broadcasting to them. I will try to add more features related with Database. If you need help to get the URI you can ask in Support Group: https://t.me/linux_repo"
+          "description": "MongoDB URI for saving User IDs when they first Start the Bot. We will use that for Broadcasting to them. I will try to add more features related with Database. If you need help to get the URI you can ask in Support Group: https://t.me/TeleRoid14"
       },
       "OWNER_ID": {
           "description": "Your Telegram User ID"
