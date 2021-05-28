@@ -53,14 +53,14 @@ async def start(b, m):
                     disable_web_page_preview=True)
                 return
         await m.reply_text(
-            text='🙋 Hello!!\n
+            text='🙋 Hello!
 A Simple Telegram File to Public link generator bot.
 
- I can generate Direct URL of any Telegram Medias for Downloading & Online Streaming!!! 
+ I can generate Direct URL of any Telegram Files Or Videos for Downloading & Online Streaming!!! 
 
  ☛ /help for More 
 
- NB:🔞 Dont forward Porn Files to me, You will Get Permanent B A N. \n\nSend me any file & see the magic!',
+ NB:🔞 Don't forward Porn Files to me, You will Get Permanent B A N. \n\nSend me any file & see the magic!',
             reply_markup=InlineKeyboardMarkup(
                 [
                     [InlineKeyboardButton('⭕ Channel ⭕', url='https://t.me/TeleRoidGroup'), InlineKeyboardButton('⭕ Support ⭕', url='https://t.me/TeleRoid14')],
@@ -84,7 +84,7 @@ A Simple Telegram File to Public link generator bot.
             except UserNotParticipant:
                 await b.send_message(
                     chat_id=m.chat.id,
-                    text="**Please Join My Updates Channel to use this Bot!**\n\nDue to Overload, Only Channel Subscribers can use the Bot!",
+                    text="**Please Join My Updates Channel to use this Bot!**\n\nDue to Overload, Only Channel Subscribers can use the Bot!\n\n@TheTeleRoid",
                     reply_markup=InlineKeyboardMarkup(
                         [
                             [
