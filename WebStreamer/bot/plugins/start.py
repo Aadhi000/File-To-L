@@ -172,19 +172,7 @@ async def help_handler(bot, message):
                 disable_web_page_preview=True)
             return
     await message.reply_text(
-        text="I think this Is Not That Though I Guess...😅😅!
-
-⚡ Sent Me Any Telegram File And I Will Provide You The The File Link...
-
-⚡ This Link Can Be Used To Download Or Stream Files Through My Server
-
-⚡ For Streaming Just Copy The Mono Link And Paste It In Your Video Player To Start Streaming
-
-⚡ This Is An Permanent Link
-
-⚡ Also I am Supported in Channels. Add me to Channel as Admin to Make Me Workable!",
-      
-For More Information : @TeleRoidGroup
+        text="I think this Is Not That Though for U ...😅😅!\n\n⚡Sent Me Any Telegram File And I Will Provide You The The File Link...\n\n⚡This Link Can Be Used To Download Or Stream Files Through My Server\n\n⚡For Streaming Just Copy The Mono Link And Paste It In Your Video Player To Start Streaming\n\n⚡This bot shAres the Permanent Link to yOu.\n\n⚡Also I am Supported in Channels. Add me to Channel as Admin to Make Me Workable!\n\nFor More Information: @TeleRoidGroup", 
   parse_mode="Markdown",
         disable_web_page_preview=True,
         reply_markup=InlineKeyboardMarkup(
