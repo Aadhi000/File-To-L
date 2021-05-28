@@ -73,7 +73,7 @@ async def private_receive_handler(c: Client, m: Message):
         elif m.audio:
             file_name = f"{m.audio.file_name}"
 
-        msg_text = "Bravo! 😁\nYour Link Generated! 🤓\n\n📂 **File Name:** `{}`\n**File Size:** `{}`\n\n📥 **Download Link:** `{}`"
+        msg_text = "Bravo!🙃\nYour Link Generated! 🤓\n\n📂 **File Name:** `{}`\n**File Size:** `{}`\n\n📥 **Download Link:** `{}`\n\n@TheTeleRoid"
         await log_msg.reply_text(text=f"Requested by [{m.from_user.first_name}](tg://user?id={m.from_user.id})\n**User ID:** `{m.from_user.id}`\n**Download Link:** {stream_link}\n\n@TheTeleRoid", disable_web_page_preview=True, parse_mode="Markdown", quote=True)
         await m.reply_text(
             text=msg_text.format(file_name, file_size, stream_link),
