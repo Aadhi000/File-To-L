@@ -53,7 +53,7 @@ async def start(b, m):
                     disable_web_page_preview=True)
                 return
         await m.reply_text(
-            text='🙋 Hello!!\nHello!!
+            text='🙋 Hello!!\n
 A Simple Telegram File to Public link generator bot.
 
  I can generate Direct URL of any Telegram Medias for Downloading & Online Streaming!!! 
@@ -179,8 +179,20 @@ async def help_handler(bot, message):
                 disable_web_page_preview=True)
             return
     await message.reply_text(
-        text="Send me any File I will provide External Direct Download Link!\n\nAlso I am Supported in Channels. Add me to Channel as Admin to Make Me Workable!",
-        parse_mode="Markdown",
+        text="I think this Is Not That Though I Guess...😅😅!
+
+⚡ Sent Me Any Telegram File And I Will Provide You The The File Link...
+
+⚡ This Link Can Be Used To Download Or Stream Files Through My Server
+
+⚡ For Streaming Just Copy The Mono Link And Paste It In Your Video Player To Start Streaming
+
+⚡ This Is An Permanent Link
+
+⚡ Also I am Supported in Channels. Add me to Channel as Admin to Make Me Workable!",
+      
+For More Information : @TeleRoidGroup
+  parse_mode="Markdown",
         disable_web_page_preview=True,
         reply_markup=InlineKeyboardMarkup(
             [
