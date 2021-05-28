@@ -1,4 +1,4 @@
-# (c) @EverythingSuckz | @AbirHasan2005 | @PredatorHackerzZ
+# (c) @AbirHasan2005 | @PredatorHackerzZ
 
 from WebStreamer.bot import StreamBot
 from WebStreamer.vars import Var
@@ -26,7 +26,7 @@ async def start(b, m):
                 if user.status == "kicked":
                     await b.send_message(
                         chat_id=m.chat.id,
-                        text="Sorry Sir, You are Banned to use me. Contact my [Support Group](https://t.me/TheTeleRoid).",
+                        text="Sorry Sir, You are Banned to use me. Contact my [Support Group](https://t.me/TeleRoid14).",
                         parse_mode="markdown",
                         disable_web_page_preview=True
                     )
@@ -34,7 +34,7 @@ async def start(b, m):
             except UserNotParticipant:
                 await b.send_message(
                     chat_id=m.chat.id,
-                    text="**Please Join My Updates Channel to use this Bot!**\n\nDue to Overload, Only Channel Subscribers can use the Bot!",
+                    text="**Please Join My Updates Channel to use this Bot!**\n\nDue to Overload, Only Channel Subscribers can use the Bot!\n\n@TheTeleRoid",
                     reply_markup=InlineKeyboardMarkup(
                         [
                             [
@@ -53,7 +53,14 @@ async def start(b, m):
                     disable_web_page_preview=True)
                 return
         await m.reply_text(
-            text='🙋 Hello!!\nThis is an Instant Telegram File to Link Generator Bot.\n\nSend me any file & see the magic!',
+            text='🙋 Hello!!\nHello!!
+A Simple Telegram File to Public link generator bot.
+
+ I can generate Direct URL of any Telegram Medias for Downloading & Online Streaming!!! 
+
+ ☛ /help for More 
+
+ NB:🔞 Dont forward Porn Files to me, You will Get Permanent B A N. \n\nSend me any file & see the magic!',
             reply_markup=InlineKeyboardMarkup(
                 [
                     [InlineKeyboardButton('⭕ Channel ⭕', url='https://t.me/TeleRoidGroup'), InlineKeyboardButton('⭕ Support ⭕', url='https://t.me/TeleRoid14')],
@@ -95,7 +102,7 @@ async def start(b, m):
             except Exception:
                 await b.send_message(
                     chat_id=m.chat.id,
-                    text="Something went Wrong. Contact my [Support Group](https://t.me/TeleRoid).",
+                    text="Something went Wrong. Contact my [Support Group](https://t.me/TeleRoid14).",
                     parse_mode="markdown",
                     disable_web_page_preview=True)
                 return
@@ -123,7 +130,7 @@ async def start(b, m):
                                      Var.PORT,
                                      get_msg.message_id)
 
-        msg_text = "Bruh! 😁\nYour Link Generated! 🤓\n\n📂 **File Name:** `{}`\n**File Size:** `{}`\n\n📥 **Download Link:** `{}`"
+        msg_text = "Bruh! 😁\nYour Link Generated! 🤓\n\n📂 **File Name:** `{}`\n**File Size:** `{}`\n\n📥 **Download Link:** `{}`\n\n@TheTeleRoid"
         await m.reply_text(
             text=msg_text.format(file_name, file_size, stream_link),
             parse_mode="Markdown",
