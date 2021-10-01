@@ -8,9 +8,9 @@
     <br />
     <a href="https://telegram.dog/TeleRoid_File2Link_Bot"><strong>Demo Bot »</strong></a>
     <br />
-    <a href="https://github.com/P-Phreak/Pyro-FileStreamBot/issues">Report a Bug</a>
+    <a href="https://github.com/PredatorHackerzZ/TG-File2Link/issues">Report a Bug</a>
     |
-    <a href="https://github.com/P-Phreak/Pyro-FileStreamBot/issues">Request Feature</a>
+    <a href="https://github.com/PredatorHackerzZ/TG-File2Link/issues">Request Feature</a>
   </p>
 </p>
 
@@ -47,7 +47,7 @@
 ## About This Bot
 
 <p align="center">
-    <a href="https://github.com/P-Phreak/Pyro-FileStreamBot">
+    <a href="https://github.com/PredatorHackerzZ/TG-File2Link">
         <img src="https://www.flaticon.com/premium-icon/icons/svg/2626/2626281.svg" height="100" width="100" alt="Telegram Logo">
     </a>
 </p>
