@@ -56,8 +56,9 @@ async def start(b, m):
             text="🙋 Hello!\n\nI am a Simple Telegram File to Public link generator bot.\n\nI can generate Direct URL of any Telegram Files Or Videos for Downloading & Online Streaming!!!\n\n☛ /help for More\n\nNB:🔞 Don't forward Porn Files to me, You will Get Permanent B A N.\n\nSend me any file & see the magic!",
             reply_markup=InlineKeyboardMarkup(
                 [
-                    [InlineKeyboardButton('⭕ Channel ⭕', url='https://t.me/TeleRoidGroup'), InlineKeyboardButton('⭕ Support ⭕', url='https://t.me/TeleRoid14')],
-                    [InlineKeyboardButton('About Meh ♐', url='https://t.me/TheTeleRoid')]
+                    [InlineKeyboardButton("⭕ Channel ⭕", url="https://t.me/TeleRoidGroup"), InlineKeyboardButton("⭕ Support ⭕", url="https://t.me/TeleRoid14")],
+                    [InlineKeyboardButton("👥 BotList", url="https://t.me/joinchat/t1ko_FOJxhFiOThl"), InlineKeyboardButton("♻ Github", url="https://github.com/PredatorHackerzZ")],
+                    [InlineKeyboardButton("About Meh ♐", url="https://t.me/TheTeleRoid")]
                 ]
             ),
             disable_web_page_preview=True
@@ -84,7 +85,7 @@ async def start(b, m):
                                 InlineKeyboardButton("🤖 Join Updates Channel", url=f"https://t.me/{Var.UPDATES_CHANNEL}")
                             ],
                             [
-                                InlineKeyboardButton("🔄 Refresh / Try Again",
+                                InlineKeyboardButton("🔄 Refresh 🔄",
                                                      url=f"https://t.me/TeleRoid_File2Link_Bot?start=PredatorHackerzZ_{usr_cmd}")
                             ]
                         ]
@@ -123,7 +124,7 @@ async def start(b, m):
                                      Var.PORT,
                                      get_msg.message_id)
 
-        msg_text = "Bruh! 😁\nYour Link Generated! 🤓\n\n📂 **File Name:** `{}`\n**File Size:** `{}`\n\n📥 **Download Link:** `{}`\n\n@TheTeleRoid"
+        msg_text = "**Your File Link Generated!** 🤓\n\n📂 **File Name:** `{}`\n📦**File Size:** `{}`\n\n📥 **Download Link:** `{}`\n\n🚸 Note: This Is a Permanent Link & Never Expire\n\n© @TheTeleRoid"
         await m.reply_text(
             text=msg_text.format(file_name, file_size, stream_link),
             parse_mode="Markdown",
@@ -172,13 +173,14 @@ async def help_handler(bot, message):
                 disable_web_page_preview=True)
             return
     await message.reply_text(
-        text="I think this Is Not That Though for U ...😅😅!\n\n⚡Sent Me Any Telegram File And I Will Provide You The The File Link...\n\n⚡This Link Can Be Used To Download Or Stream Files Through My Server\n\n⚡For Streaming Just Copy The Mono Link And Paste It In Your Video Player To Start Streaming\n\n⚡This bot shAres the Permanent Link to yOu.\n\n⚡Also I am Supported in Channels. Add me to Channel as Admin to Make Me Workable!\n\nFor More Information: @TeleRoidGroup", 
+        text="⚡Sᴇɴᴅ ᴍᴇ ᴀɴʏ ꜰɪʟᴇ (ᴏʀ) ᴍᴇᴅɪᴀ ꜰʀᴏᴍ ᴛᴇʟᴇɢʀᴀᴍ....\nThis Bot Will Send You Permanent Link\n⚡This Link Can Be Used To Download Or Stream Files[Using External Video Player] Through My Server\n⚡For Streaming Just Copy The Mono Link And Paste It In Your Video Player To Start Streaming\n⚡This bot shAres the Permanent Link to yOu.\n⚡This Bot Is Also Supported in Channels. Add me to Channel as Admin to Make Me Workable!\nFor More Information: @TeleRoidGroup\n\n🔹**WARNING**🚸/n/n**🔞 Porn Contents Leads You To Permanent Ban From All Bots**", 
   parse_mode="Markdown",
         disable_web_page_preview=True,
         reply_markup=InlineKeyboardMarkup(
             [
                 [InlineKeyboardButton("⭕ Channel ⭕", url="https://t.me/TeleRoidGroup"), InlineKeyboardButton("😇 Support", url="https://t.me/TeleRoid14")],
-                [InlineKeyboardButton("💁‍♂️ Developer", url="https://t.me/TheTeleRoid")]
+                [InlineKeyboardButton("🚸 Powered By ", url="https://t.me/MoviesFlixers_DL"), InlineKeyboardButton("💰 Donate", url="https://t.me/PayForBotZ")],
+                [InlineKeyboardButton("👨‍💻 Developer", url="https://t.me/TheTeleRoid")]
             ]
         )
     )
