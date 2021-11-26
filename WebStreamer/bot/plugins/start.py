@@ -184,3 +184,76 @@ async def help_handler(bot, message):
             ]
         )
     )
+
+@StreamBot.on_message(filters.command('about') & filters.private & ~filters.edited)
+async def help_handler(bot, message):
+    if not await db.is_user_exist(message.from_user.id):
+        await db.add_user(message.from_user.id)
+        await bot.send_message(
+            Var.BIN_CHANNEL,
+            f"#NEW_USER: \n\nNew User [{message.from_user.first_name}](tg://user?id={message.from_user.id}) Started !!"
+        )
+    if Var.UPDATES_CHANNEL is not None:
+        try:
+            user = await bot.get_chat_member(Var.UPDATES_CHANNEL, message.chat.id)
+            if user.status == "kicked":
+                await bot.send_message(
+                    chat_id=message.chat.id,
+                    text="Sorry Sir, You are Banned to use me. Contact my [Support Group](https://t.me/TeleRoid14).",
+                    parse_mode="markdown",
+                    disable_web_page_preview=True
+                )
+                return
+        except UserNotParticipant:
+            await bot.send_message(
+                chat_id=message.chat.id,
+                text="**Please Join My Updates Channel to use this Bot!**\n\nDue to Overload, Only Channel Subscribers can use the Bot!",
+                reply_markup=InlineKeyboardMarkup(
+                    [
+                        [
+                            InlineKeyboardButton("🤖 Join Updates Channel", url=f"https://t.me/{Var.UPDATES_CHANNEL}")
+                        ]
+                    ]
+                ),
+                parse_mode="markdown"
+            )
+            return
+        except Exception:
+            await bot.send_message(
+                chat_id=message.chat.id,
+                text="Something went Wrong. Contact my [Support Group](https://t.me/TeleRoid14).",
+                parse_mode="markdown",
+                disable_web_page_preview=True)
+            return
+    await message.reply_text(
+        text="\n
+╭───[ **🔅TeleRoidFile2Link🔅**]───⍟
+│
+├<b>🤖Bot Name : <a href='https://t.me/Renamer_teleroid_bot'>Rename X2 Bot</a></b>\n
+│
+├<b>📢 Channel : <a href='https://t.me/TeleRoidGroup'>TÉLÉRØÎD</a></b>\n
+│
+├<b>👥 Version : <a href='https://t.me/TeleRoid_Renamer_bot'>0.9.2 beta</a></b>\n
+│
+├<b>💢 Source : <a href='https://github.com/PredatorHackerzZ/Renamer-bot'>Click Here</a></b>\n
+│
+├<b>🌐 Server : <a href='https://heroku.com'>Heroku</a></b>\n
+│
+├<b>📕 Library : <a href='https://github.com/pyrogram'>Pyrogram 1.2.8</a></b>\n
+│
+├<b>㊙ Language: <a href='https://www.python.org'>Python 3.9.4</a></b>\n
+│
+├<b>👨‍💻 Developer : <a href='https://t.me/PredatorHackerZ'>꧁ ƤℜɆĐ₳₮Øℜ 🇮🇳 ꧂</a></b>\n
+│
+├<b>🚸 Powered By : <a href='https://t.me/Moviesflixers_DL'>Tᴀᴍɪʟᴡᴇʙ Tɢ Nᴇᴛᴡᴏʀᴋ</a></b>\n
+│
+╰─────────[Thanks 😊]────────⍟"
+  parse_mode="Markdown",
+        disable_web_page_preview=True,
+        reply_markup=InlineKeyboardMarkup(
+            [
+                [InlineKeyboardButton("🚸 Powered By ", url="https://t.me/MoviesFlixers_DL"), InlineKeyboardButton("💰 Donate", url="https://t.me/PayForBotZ")],
+                [InlineKeyboardButton("👨‍💻 Developer", url="https://t.me/TheTeleRoid")]
+            ]
+        )
+    )
