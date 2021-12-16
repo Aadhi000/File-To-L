@@ -228,25 +228,25 @@ async def about_handler(bot, message):
     await message.reply_text(
         text=""" 💕 About My Self
 
-╭───[ **🔅TeleRoidFile2Link🔅**]───⍟
+╭──────[🔅TeleRoidFile2Link🔅]──────⍟
 │
-├<b>🤖Bot Name : <a href='https://t.me/Renamer_teleroid_bot'>Rename X2 Bot</a></b>\n
+├<b>🤖Bot Name : <a href='https://t.me/teleroid_file2link_bot'>@File2Link_Bot</a></b>
 │
-├<b>📢 Channel : <a href='https://t.me/TeleRoidGroup'>TÉLÉRØÎD</a></b>\n
+├<b>📢 Channel : <a href='https://t.me/TeleRoidGroup'>@TeleRoidGroup</a></b>
 │
-├<b>👥 Version : <a href='https://t.me/TeleRoid_Renamer_bot'>0.9.2 beta</a></b>\n
+├<b>👥 Version : <a href='https://t.me/TeleRoid_Renamer_bot'>0.9.2 beta</a></b>
 │
-├<b>💢 Source : <a href='https://github.com/PredatorHackerzZ/Renamer-bot'>Click Here</a></b>\n
+├<b>💢 Source : <a href='https://github.com/PredatorHackerzZ/TG-File2Link'>Click Here</a></b>
 │
-├<b>🌐 Server : <a href='https://heroku.com'>Heroku</a></b>\n
+├<b>🌐 Server : <a href='https://heroku.com'>Heroku</a></b>
 │
-├<b>📕 Library : <a href='https://github.com/pyrogram'>Pyrogram 1.2.8</a></b>\n
+├<b>📕 Library : <a href='https://github.com/pyrogram'>Pyrogram 1.2.8</a></b>
 │
-├<b>㊙ Language: <a href='https://www.python.org'>Python 3.9.4</a></b>\n
+├<b>㊙ Language: <a href='https://www.python.org'>Python 3.9.9</a></b>
 │
-├<b>👨‍💻 Developer : <a href='https://t.me/PredatorHackerZ'>꧁ ƤℜɆĐ₳₮Øℜ 🇮🇳 ꧂</a></b>\n
+├<b>👨‍💻 Developer : <a href='https://t.me/PredatorHackerZ'>꧁ ƤℜɆĐ₳₮Øℜ 🇮🇳 ꧂</a></b>
 │
-├<b>🚸 Powered By : <a href='https://t.me/Moviesflixers_DL'>@HindiWebNetwork</a></b>\n
+├<b>🚸 Powered By : <a href='https://t.me/Moviesflixers_DL'>@HindiWebNetwork</a></b>
 │
 ╰─────────[Thanks 😊]────────⍟""",
   parse_mode="html",
