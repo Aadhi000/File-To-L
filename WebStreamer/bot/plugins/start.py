@@ -186,7 +186,7 @@ async def help_handler(bot, message):
     )
 
 @StreamBot.on_message(filters.command('about') & filters.private & ~filters.edited)
-async def help_handler(bot, message):
+async def about_handler(bot, message):
     if not await db.is_user_exist(message.from_user.id):
         await db.add_user(message.from_user.id)
         await bot.send_message(
@@ -226,7 +226,8 @@ async def help_handler(bot, message):
                 disable_web_page_preview=True)
             return
     await message.reply_text(
-        text="\n
+        text=""" 💕 About My Self
+
 ╭───[ **🔅TeleRoidFile2Link🔅**]───⍟
 │
 ├<b>🤖Bot Name : <a href='https://t.me/Renamer_teleroid_bot'>Rename X2 Bot</a></b>\n
@@ -247,12 +248,12 @@ async def help_handler(bot, message):
 │
 ├<b>🚸 Powered By : <a href='https://t.me/Moviesflixers_DL'>Tᴀᴍɪʟᴡᴇʙ Tɢ Nᴇᴛᴡᴏʀᴋ</a></b>\n
 │
-╰─────────[Thanks 😊]────────⍟"
+╰─────────[Thanks 😊]────────⍟"""
   parse_mode="Markdown",
         disable_web_page_preview=True,
         reply_markup=InlineKeyboardMarkup(
             [
-                [InlineKeyboardButton("🚸 Powered By ", url="https://t.me/MoviesFlixers_DL"), InlineKeyboardButton("💰 Donate", url="https://t.me/PayForBotZ")],
+                [InlineKeyboardButton("🚸 Powered By ", url="https://t.me/MoviesFlixers_DL"), InlineKeyboardButton("💰 Donate", url="https://paypal.me/AbhishekKumarIN47")],
                 [InlineKeyboardButton("👨‍💻 Developer", url="https://t.me/TheTeleRoid")]
             ]
         )
