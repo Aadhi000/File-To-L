@@ -11,5 +11,5 @@ jobs:
     steps:
       - uses: mikeesto/heroku-awake@1.0.0
         with:
-          URL: "https://file2linkboat.herokuapp.com" 
+          URL: "https://pyrobotstream.herokuapp.com" 
 
