@@ -23,7 +23,7 @@ async def start(b, m):
         if Var.UPDATES_CHANNEL is not None:
             try:
                 user = await b.get_chat_member(Var.UPDATES_CHANNEL, m.chat.id)
-                if user.status == "kicked":
+                if user.status == "banned":
                     await b.send_message(
                         chat_id=m.chat.id,
                         text="Sorry Sir, You are Banned to use me. Contact my [Support Group](https://t.me/TeleRoid14).",
@@ -67,7 +67,7 @@ async def start(b, m):
         if Var.UPDATES_CHANNEL is not None:
             try:
                 user = await b.get_chat_member(Var.UPDATES_CHANNEL, m.chat.id)
-                if user.status == "kicked":
+                if user.status == "banned":
                     await b.send_message(
                         chat_id=m.chat.id,
                         text="Sorry Sir, You are Banned to use me. Contact my [Support Group](https://t.me/TeleRoid14).",
@@ -143,7 +143,7 @@ async def help_handler(bot, message):
     if Var.UPDATES_CHANNEL is not None:
         try:
             user = await bot.get_chat_member(Var.UPDATES_CHANNEL, message.chat.id)
-            if user.status == "kicked":
+            if user.status == "banned":
                 await bot.send_message(
                     chat_id=message.chat.id,
                     text="Sorry Sir, You are Banned to use me. Contact my [Support Group](https://t.me/TeleRoid14).",
@@ -196,7 +196,7 @@ async def about_handler(bot, message):
     if Var.UPDATES_CHANNEL is not None:
         try:
             user = await bot.get_chat_member(Var.UPDATES_CHANNEL, message.chat.id)
-            if user.status == "kicked":
+            if user.status == "banned":
                 await bot.send_message(
                     chat_id=message.chat.id,
                     text="Sorry Sir, You are Banned to use me. Contact my [Support Group](https://t.me/TeleRoid14).",
@@ -230,7 +230,7 @@ async def about_handler(bot, message):
 
 ╭──────[🔅TeleRoidFile2Link🔅]──────⍟
 │
-├<b>🤖Bot Name : <a href='https://t.me/teleroid_file2link_bot'>@File2Link_Bot</a></b>
+├<b>🤖Bot Name : <a href='https://t.me/teleroid_file2link_bot'>File To Link</a></b>
 │
 ├<b>📢 Channel : <a href='https://t.me/TeleRoidGroup'>@TeleRoidGroup</a></b>
 │
@@ -254,7 +254,7 @@ async def about_handler(bot, message):
         reply_markup=InlineKeyboardMarkup(
             [
                 [InlineKeyboardButton("🚸 Powered By ", url="https://t.me/MoviesFlixers_DL"), InlineKeyboardButton("💰 Donate", url="https://paypal.me/AbhishekKumarIN47")],
-                [InlineKeyboardButton("👨‍💻 Developer", url="https://t.me/TheTeleRoid")]
+                [InlineKeyboardButton("Need Private Bot ❓", url="https://t.me/PayForBotz")]
             ]
         )
     )
