@@ -1,4 +1,3 @@
-# (c) @EverythingSuckz | @AbirHasan2005 | @PredatorHackerzZ
 
 import asyncio
 from WebStreamer.bot import StreamBot
@@ -25,7 +24,7 @@ async def private_receive_handler(c: Client, m: Message):
             if user.status == "kicked":
                 await c.send_message(
                     chat_id=m.chat.id,
-                    text="Sorry Sir, You are Banned to use me. Contact my [Support Group](https://t.me/TeleRoid14).",
+                    text="**𝚈𝙾𝚄 𝙰𝚁𝙴 𝙱𝙰𝙽𝙽𝙴𝙳../**",
                     parse_mode="markdown",
                     disable_web_page_preview=True
                 )
@@ -33,11 +32,11 @@ async def private_receive_handler(c: Client, m: Message):
         except UserNotParticipant:
             await c.send_message(
                 chat_id=m.chat.id,
-                text="**Please Join My Updates Channel to use this Bot Dude!**\n\nDue to Overload, Only Channel Subscribers can use the Bot!\n\n@TheTeleRoid",
+                text="**𝙹𝙾𝙸𝙽 𝙼𝚈 𝚄𝙿𝙳𝙰𝚃𝙴𝚉 𝙲𝙷𝙰𝙽𝙽𝙴𝙻 𝚃𝙾 𝚄𝚂𝙴 𝙼𝙴..**\n\n**𝙳𝚄𝙴 𝚃𝙾 𝙾𝚅𝙴𝚁𝙻𝙾𝙰𝙳 𝙾𝙽𝙻𝚈 𝙲𝙷𝙰𝙽𝙽𝙴𝙻 𝚂𝚄𝙱𝚂𝙲𝚁𝙸𝙱𝙴𝚁𝚂 𝙲𝙰𝙽 𝚄𝚂𝙴 𝚃𝙷𝙸𝚂 𝙱𝙾𝚃..!**",
                 reply_markup=InlineKeyboardMarkup(
                     [
                         [
-                            InlineKeyboardButton("🤖 Join Updates Channel", url=f"https://t.me/{Var.UPDATES_CHANNEL}")
+                            InlineKeyboardButton("𝙹𝙾𝙸𝙽 𝚄𝙿𝙳𝙰𝚃𝙴𝚉 𝙲𝙷𝙰𝙽𝙽𝙴𝙻", url=f"https://t.me/{Var.UPDATES_CHANNEL}")
                         ]
                     ]
                 ),
@@ -47,7 +46,7 @@ async def private_receive_handler(c: Client, m: Message):
         except Exception:
             await c.send_message(
                 chat_id=m.chat.id,
-                text="Something went Wrong. Contact my [Support Group](https://t.me/TeleRoid14).",
+                text="**𝙰𝙳𝙳 𝙵𝙾𝚁𝙲𝙴 𝚂𝚄𝙱 𝚃𝙾 𝙰𝙽𝚈 𝙲𝙷𝙰𝙽𝙽𝙴𝙻**",
                 parse_mode="markdown",
                 disable_web_page_preview=True)
             return
@@ -73,11 +72,11 @@ async def private_receive_handler(c: Client, m: Message):
         elif m.audio:
             file_name = f"{m.audio.file_name}"
 
-        msg_text = "**Your Link Generated!** 🤓\n\n📂 **File Name:** `{}`\n📦**File Size:** `{}`\n\n📥 **Download Link:** `{}`\n\n🚸 Nᴏᴛᴇ : Tʜɪs ᴘᴇʀᴍᴀɴᴇɴᴛ Lɪɴᴋ, Nᴏᴛ Exᴘɪʀᴇᴅ\n\n© @TheTeleRoid"
-        await log_msg.reply_text(text=f"Requested by [{m.from_user.first_name}](tg://user?id={m.from_user.id})\n**User ID:** `{m.from_user.id}`\n**Download Link:** {stream_link}\n\n🚸 @TheTeleRoid", disable_web_page_preview=True, parse_mode="Markdown", quote=True)
+        msg_text = "**𝚈𝙾𝚄𝚁 𝙻𝙸𝙽𝙺 𝙸𝚂 𝙶𝙴𝙽𝙴𝚁𝙰𝚃𝙴𝙳...⚡\n\n📧 𝙵𝙸𝙻𝙴 𝙽𝙰𝙼𝙴 :- {}\n {}\n\n💌 𝙳𝙾𝚆𝙽𝙻𝙾𝙰𝙳 𝙻𝙸𝙽𝙺 :- {}\n\n♻️ 𝚃𝙷𝙸𝚂 𝙻𝙸𝙽𝙺 𝙸𝚂 𝙿𝙴𝚁𝙼𝙰𝙽𝙴𝙽𝚃 𝙰𝙽𝙳 𝚆𝙸𝙻𝙻 𝙽𝙾𝚃 𝙴𝚇𝙿𝙸𝚁𝙴\n\n@OpusTechz**"
+        await log_msg.reply_text(text=f"𝚁𝙴𝚀𝚄𝙴𝚂𝚃𝙴𝙳 𝙱𝚈 [{m.from_user.first_name}](tg://user?id={m.from_user.id})\n**𝚄𝚂𝙴𝚁 𝙸𝙳 :-** `{m.from_user.id}`\n**𝙳𝙾𝚆𝙽𝙻𝙾𝙰𝙳 𝙻𝙸𝙽𝙺 :- ** {stream_link}\n\n@OpusTechz", disable_web_page_preview=True, parse_mode="Markdown", quote=True)
         await m.reply_text(
             text=msg_text.format(file_name, file_size, stream_link),
-            reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("📥 Download Now", url=stream_link)]]),
+            reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("⚡ 𝙳𝙾𝚆𝙽𝙻𝙾𝙰𝙳 𝙽𝙾𝚆 ⚡", url=stream_link)]]),
             quote=True
         )
     except FloodWait as e:
@@ -94,7 +93,7 @@ async def channel_receive_handler(bot, broadcast):
     try:
         log_msg = await broadcast.forward(chat_id=Var.BIN_CHANNEL)
         await log_msg.reply_text(
-            text=f"**Channel Name:** `{broadcast.chat.title}`\n**Channel ID:** `{broadcast.chat.id}`\n**Link:** https://t.me/TeleRoid_File2Link_Bot?start=PredatorHackerzZ_{str(log_msg.message_id)}",
+            text=f"**Channel Name:** `{broadcast.chat.title}`\n**Channel ID:** `{broadcast.chat.id}`\n**Link:** https://t.me/OPFileToLinkBot?start=OpusTechz_{str(log_msg.message_id)}",
             quote=True,
             parse_mode="Markdown"
         )
@@ -103,7 +102,7 @@ async def channel_receive_handler(bot, broadcast):
             message_id=broadcast.message_id,
             reply_markup=InlineKeyboardMarkup(
                 [
-                    [InlineKeyboardButton("Get Direct Download Link", url=f"https://t.me/TeleRoid_File2Link_Bot?start=PredatorHackerzZ_{str(log_msg.message_id)}")]
+                    [InlineKeyboardButton("𝙳𝙾𝚆𝙽𝙻𝙾𝙰𝙳 𝙻𝙸𝙽𝙺", url=f"https://t.me/OPFileToLinkBot?start=OpusTechz_{str(log_msg.message_id)}")]
                 ]
             )
         )
