@@ -101,4 +101,13 @@ async def channel_receive_handler(bot, broadcast):
                 ]
             )
         )
-    
+    except FloodWait as w:
+        print(f"Sleeping for {str(w.x)}s")
+        await asyncio.sleep(w.x)
+        await bot.send_message(chat_id=Var.BIN_CHANNEL,
+                             text=f"Getting FloodWait of {str(w.x)}s from {broadcast.chat.title}\n\n**Channel ID:** `{str(broadcast.chat.id)}`",
+                             disable_web_page_preview=True, parse_mode="Markdown")
+    except Exception as e:
+        await bot.send_message(chat_id=Var.BIN_CHANNEL, text=f"#ERROR_TRACEBACK: `{e}`", disable_web_page_preview=True, parse_mode="Markdown")
+        print(f"Can't Edit Broadcast Message!\nError: {e}")
+
