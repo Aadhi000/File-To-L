@@ -222,35 +222,26 @@ async def about_handler(bot, message):
                 disable_web_page_preview=True)
             return
     await message.reply_text(
-        text=""" 💕 About My Self
+        text="""**𝚂𝙾𝙼𝙴𝚃𝙷𝙸𝙽𝙶 𝙰𝙱𝙾𝚄𝚃 𝙼𝙴
 
-╭──────[𝙵𝙸𝙻𝙴-𝚃𝙾-𝙻𝙸𝙽𝙺 𝙱𝙾𝚃]──────⍟
-│
-├<b>🤖Bot Name : <a href='https://t.me/teleroid_file2link_bot'>File To Link</a></b>
-│
-├<b>📢 Channel : <a href='https://t.me/TeleRoidGroup'>@TeleRoidGroup</a></b>
-│
-├<b>👥 Version : <a href='https://t.me/TeleRoid_Renamer_bot'>0.9.2 beta</a></b>
-│
-├<b>💢 Source : <a href='https://github.com/PredatorHackerzZ/TG-File2Link'>Click Here</a></b>
-│
-├<b>🌐 Server : <a href='https://heroku.com'>Heroku</a></b>
-│
-├<b>📕 Library : <a href='https://github.com/pyrogram'>Pyrogram 1.2.8</a></b>
-│
-├<b>㊙ Language: <a href='https://www.python.org'>Python 3.9.9</a></b>
-│
-├<b>👨‍💻 Developer : <a href='https://t.me/PredatorHackerZ'>꧁ ƤℜɆĐ₳₮Øℜ 🇮🇳 ꧂</a></b>
-│
-├<b>🚸 Powered By : <a href='https://t.me/Moviesflixers_DL'>@HindiWebNetwork</a></b>
-│
-╰─────────[Thanks 😊]────────⍟""",
+╭━━━━━━━〔𝙵𝙸𝙻𝙴-𝚃𝙾-𝙻𝙸𝙽𝙺 𝙱𝙾𝚃〕━━━━━━━
+┃
+┣⪼<b>𝙱𝙾𝚃-𝙽𝙰𝙼𝙴 : <a href='https://t.me/teleroid_file2link_bot'>File To Link</a></b>
+┣⪼<b>𝚄𝙿𝙳𝙰𝚃𝙴𝚉 : <a href='https://t.me/MWUpdatez'>@TeleRoidGroup</a></b>
+┣⪼<b>𝚂𝚄𝙿𝙿𝙾𝚁𝚃 : <a href='https://t.me/OpusTechz'>0.9</a></b>
+┣⪼<b>𝚂𝙴𝚁𝚅𝙴𝚁 : 𝙷𝙴𝚁𝚄𝙺𝙾</b>
+┣⪼<b>𝙻𝙸𝙱𝚁𝙰𝚁𝚈 : 𝙿𝚁𝙾𝙶𝚁𝙰𝙼</b>
+┣⪼<b>𝙻𝙰𝙽𝙶𝚄𝙰𝙶𝙴: 𝙿𝚈𝚃𝙷𝙾𝙽 3</b>
+┣⪼<b>𝚂𝙾𝚄𝚁𝙲𝙴-𝙲𝙾𝙳𝙴 : <a href='https://github.com/PredatorHackerzZ/TG-File2Link'>𝙵𝙸𝙻𝙴-𝚃𝙾-𝙻𝙸𝙽𝙺</a></b>
+┣⪼<b>𝚈𝚃-𝙲𝙷𝙰𝙽𝙽𝙴𝙻 : <a href='https://t.me/Moviesflixers_DL'>@HindiWebNetwork</a></b>
+┃
+╰━━━━━━━〔𝙿𝙻𝙴𝙰𝚂𝙴 𝚂𝚄𝙿𝙿𝙾𝚁𝚃〕━━━━━━━**""",
   parse_mode="html",
         disable_web_page_preview=True,
         reply_markup=InlineKeyboardMarkup(
             [
-                [InlineKeyboardButton("🚸 Powered By ", url="https://t.me/MoviesFlixers_DL"), InlineKeyboardButton("💰 Donate", url="https://paypal.me/AbhishekKumarIN47")],
-                [InlineKeyboardButton("Need Private Bot ❓", url="https://t.me/PayForBotz")]
+                [InlineKeyboardButton("⚡ 𝚄𝙿𝙳𝙰𝚃𝙴𝚉 ⚡", url="https://t.me/MWUpdatez"), InlineKeyboardButton("💸 𝙳𝙾𝙽𝙰𝚃𝙴 💸", url="https://paypal.me/114912Aadil")],
+                [InlineKeyboardButton("💌 𝚂𝚄𝙱𝚂𝙲𝚁𝙸𝙱𝙴 💌", url="https://youtube.com/channel/UCf_dVNrilcT0V2R--HbYpMA")]
             ]
         )
     )
