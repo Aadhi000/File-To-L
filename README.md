@@ -147,16 +147,3 @@ To get an instant stream link, just forward any media to the bot and boom, its f
 
 [![Heroku Awake](https://github.com/P-Phreak/Pyro-FileStreamBot/actions/workflows/Alive.yml/badge.svg?event=status)](https://github.com/P-Phreak/Pyro-FileStreamBot/actions/workflows/Alive.yml)
 
-## Special Features:
-- Added Mongo Database Support!
-- Added Broadcast Feature!
-- Added Both Channel & Private Chat Support!
-- Made Better Bin Channel Logging!
-
-### Channel Support:
-Bot also Supported with Channels. Just add bot Channel as Admin. If any new file comes in Channel it will edit it with **Get Download Link** Button.
-
-## Credits
-
-- [@EverythingSuckz](https://github.com/EverythingSuckz) & [@AbirHasan2005](https://github.com/AbirHasan2005)
-- [@PredatorHackerzZ](https://github.com/P-Phreak) 
