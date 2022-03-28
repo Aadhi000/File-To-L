@@ -1,6 +1,6 @@
 {
-  "name": "Pyro-FileStreamBot",
-  "description": "A Pyrogram Telegram bot to Stream Telegram files to web.",
+  "name": "File To Link Bot",
+  "description": "An Amazing File To Link Generator Not..",
   "keywords": [
       "telegram",
       "stream",
