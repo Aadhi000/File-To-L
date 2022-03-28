@@ -12,10 +12,10 @@
       "modular",
       "media"
     ],
-  "repository": "https://github.com/P-Phreak/Pyro-FileStreamBot",
+  "repository": "https://github.com/Aadhi000/File-To-Link",
   "success_url": "/",
-  "logo": "https://telegra.ph/file/9d63060a06c6fc6def1da.png",
-  "website": "stream.wrench.gq",
+  "logo": "https://telegra.ph/file/6c1d1d0f8615a23f12d48.png",
+  "website": "telegram.dog/OpusTechz",
   "env": {
       "ENV": {
           "description": "Set this to True if you don't want to crash the bot",
