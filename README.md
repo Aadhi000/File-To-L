@@ -1,53 +1,22 @@
-<h1 align="center">Telegram File Stream Bot</h1>
+**<h1 align="center">𝚃𝙶 𝙵𝙸𝙻𝙴 𝚃𝙾 𝙻𝙸𝙽𝙺 𝙱𝙾𝚃</h1>**
 <p align="center">
-  <a href="https://github.com/P-Phreak/Pyro-FileStreamBot">
+  <a href="https://github.com/Aadhi000/File-To-Link">
     <img src="https://socialify.git.ci/P-Phreak/Pyro-FileStreamBot/image?description=1&font=Source%20Code%20Pro&forks=1&issues=1&logo=https%3A%2F%2Fwww.flaticon.com%2Fpremium-icon%2Ficons%2Fsvg%2F2321%2F2321089.svg&pattern=Circuit%20Board&pulls=1&stargazers=1&theme=Dark" alt="Cover Image" width="650">
   </a>
   <p align="center">
-    A Telegram bot to stream files to web
+    𝙸 𝙲𝙰𝙽 𝙶𝙴𝙽𝙴𝚁𝙰𝚃𝙴 𝙳𝙸𝚁𝙴𝙲𝚃 𝙳𝙾𝚆𝙽𝙻𝙾𝙰𝙳 𝙻𝙸𝙽𝙺 𝙵𝙾𝚁 𝙰𝙽𝚈 𝚅𝙸𝙳𝙴𝙾/𝙵𝙸𝙻𝙴𝚂 𝙵𝙾𝚁 𝙳𝙾𝚆𝙽𝙻𝙾𝙰𝙳𝙸𝙽𝙶 𝙾𝙽𝙻𝙸𝙽𝙴 & 𝙵𝙾𝚁 𝚂𝚃𝚁𝙴𝙰𝙼𝙸𝙽𝙶...
     <br />
-    <a href="https://telegram.dog/TeleRoid_File2Link_Bot"><strong>Demo Bot »</strong></a>
+    <a href="https://telegram.dog/OPFileToLinkBot"><strong>𝙵𝙸𝙻𝙴 𝚃𝙾 𝙻𝙸𝙽𝙺 𝙱𝙾𝚃 »</strong></a>
     <br />
-    <a href="https://github.com/PredatorHackerzZ/TG-File2Link/issues">Report a Bug</a>
-    |
-    <a href="https://github.com/PredatorHackerzZ/TG-File2Link/issues">Request Feature</a>
   </p>
-</p>
+
 
 <hr>
-
-<details open="open">
-  <summary>Table of Contents</summary>
-  <ol>
-    <li>
-      <a href="#about-this-bot">About this Bot</a>
-      <ul>
-        <li><a href="#original-repository">Original Repository</a></li>
-      </ul>
-    </li>
-    <li>
-      <a href="#how-to-make-your-own">How to make your own</a>
-      <ul>
-        <li><a href="#deploy-on-heroku">Deploy using Heroku</a></li>
-        <li><a href="#host-it-on-vps-or-locally">Run it in a VPS / local</a></li>
-      </ul>
-    </li>
-    <li><a href="#setting-up-things">Setting up things</a></li>
-    <ul>
-      <li><a href="#mandatory-vars">Mandatory Vars</a></li>
-      <li><a href="#optional-vars">Optional Vars</a></li>
-    </ul>
-    <li><a href="#how-to-use-the-bot">How to use the bot</a></li>
-    <li><a href="#special-features">Special Features</a></li>
-    <li><a href="#demo-bot>Demo Bot</a></li>
-    <li><a href="#credits">Credits</a></li>
-  </ol>
-</details>
-
+  
 ## About This Bot
 
 <p align="center">
-    <a href="https://github.com/PredatorHackerzZ/TG-File2Link">
+    <a href="https://github.com/Aadhi000/File-To-Link">
         <img src="https://www.flaticon.com/premium-icon/icons/svg/2626/2626281.svg" height="100" width="100" alt="Telegram Logo">
     </a>
 </p>
@@ -74,8 +43,8 @@ then goto the <a href="#mandatory-vars">variables tab</a> for more info on setti
 ### Host it on VPS or Locally
 
 ```sh
-git clone https://github.com/P-Phreak/Pyro-FileStreamBot
-cd TG-FileStreamBot
+git clone https://github.com/Aadhi000/File-To-Link
+cd File-To-Link
 virtualenv -p /usr/bin/python3 venv
 . ./venv/bin/activate
 pip install -r requirements.txt
@@ -145,5 +114,5 @@ To get an instant stream link, just forward any media to the bot and boom, its f
 ## Demo Bot:
 <a href="https://t.me/AH_File2Link_Bot"><img src="https://img.shields.io/badge/Demo-Telegram%20Bot-blue.svg?logo=telegram"></a>
 
-[![Heroku Awake](https://github.com/P-Phreak/Pyro-FileStreamBot/actions/workflows/Alive.yml/badge.svg?event=status)](https://github.com/P-Phreak/Pyro-FileStreamBot/actions/workflows/Alive.yml)
+[![Heroku Awake](https://github.com/Aadhi000/File-To-Link/actions/workflows/Alive.yml/badge.svg?event=status)](https://github.com/Aadhi000/File-To-Link/actions/workflows/Alive.yml)
 
