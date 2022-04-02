@@ -97,11 +97,15 @@ async def channel_receive_handler(bot, broadcast):
         await bot.leave_chat(broadcast.chat.id)
         return
     try:
-        log_msg = await broadcast.forward(chat_id=Var.BIN_CHANNEL)
-        stream_link = "https://{}/{}/{}".format(Var.FQDN, log_msg.message_id) if Var.ON_HEROKU or Var.NO_PORT else \
+        log_msg = await m.forward(chat_id=Var.BIN_CHANNEL)
+        file_name = get_media_file_name(m)
+        file_size = humanbytes(get_media_file_size(m))
+        stream_link = "https://{}/{}/{}".format(Var.FQDN, log_msg.message_id, file_name) if Var.ON_HEROKU or Var.NO_PORT else \
             "http://{}:{}/{}/{}".format(Var.FQDN,
                                     Var.PORT,
-                                    log_msg.message_id)                                    
+                                    log_msg.message_id,
+                                    file_name)
+                                    
         await log_msg.reply_text(
             text=f"**𝙲𝙷𝙰𝙽𝙽𝙴𝙻 𝙽𝙰𝙼𝙴 :** `{broadcast.chat.title}`\n**𝙲𝙷𝙰𝙽𝙽𝙴𝙻 𝙸𝙳 :** `{broadcast.chat.id}`\n**𝙵𝙸𝙻𝙴 𝚄𝚁𝙻 :** https://t.me/{(await bot.get_me()).username}?start=OpusTechz_{str(log_msg.message_id)}",
             # text=f"**𝙲𝙷𝙰𝙽𝙽𝙴𝙻 𝙽𝙰𝙼𝙴 :** `{broadcast.chat.title}`\n**𝙲𝙷𝙰𝙽𝙽𝙴𝙻 𝙸𝙳 :** `{broadcast.chat.id}`\n**𝙵𝙸𝙻𝙴 𝚄𝚁𝙻 :** https://t.me/OPFileToLinkBot?start=OpusTechz_{str(log_msg.message_id)}",
