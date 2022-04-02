@@ -97,7 +97,7 @@ async def channel_receive_handler(bot, broadcast):
         await bot.leave_chat(broadcast.chat.id)
         return
     try:
-        log_msg = await m.forward(chat_id=Var.BIN_CHANNEL)
+        log_msg = await broadcast.forward(chat_id=Var.BIN_CHANNEL)
         file_name = get_media_file_name
         file_size = humanbytes(get_media_file_size)
         stream_link = "https://{}/{}/{}".format(Var.FQDN, log_msg.message_id, file_name) if Var.ON_HEROKU or Var.NO_PORT else \
