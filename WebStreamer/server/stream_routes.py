@@ -1,6 +1,3 @@
-# Taken from megadlbot_oss <https://github.com/eyaadh/megadlbot_oss/blob/master/mega/webserver/routes.py>
-# Thanks to Eyaadh <https://github.com/eyaadh>
-
 import math
 import logging
 import secrets
@@ -17,11 +14,14 @@ routes = web.RouteTableDef()
 async def root_route_handler(request):
     bot_details = await StreamBot.get_me()
     return web.json_response({"status": "running",
+                              "maintained_by": "Avishkar_Patil",
                               "server_permission": "Open",
-                              "telegram_bot": '@'+bot_details.username})
+                              "Telegram_Bot": '@'+bot_details.username})
 
 
 @routes.get("/{message_id}")
+@routes.get("/{message_id}/")
+@routes.get(r"/{message_id:\d+}/{name}")
 async def stream_handler(request):
     try:
         message_id = int(request.match_info['message_id'])
