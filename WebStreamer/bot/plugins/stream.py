@@ -98,10 +98,9 @@ async def channel_receive_handler(bot, broadcast):
         return
     try:
         log_msg = await broadcast.forward(chat_id=Var.BIN_CHANNEL)
-        stream_link = "https://{}/{}/{}".format(Var.FQDN, log_msg.message_id, file_name) if Var.ON_HEROKU or Var.NO_PORT else \
+        stream_link = "https://{}/{}/{}".format(Var.FQDN, log_msg.message_id) if Var.ON_HEROKU or Var.NO_PORT else \
             "http://{}:{}/{}/{}".format(Var.FQDN,
                                     Var.PORT,
-                                    file_name,
                                     log_msg.message_id)                                    
         await log_msg.reply_text(
             text=f"**𝙲𝙷𝙰𝙽𝙽𝙴𝙻 𝙽𝙰𝙼𝙴 :** `{broadcast.chat.title}`\n**𝙲𝙷𝙰𝙽𝙽𝙴𝙻 𝙸𝙳 :** `{broadcast.chat.id}`\n**𝙵𝙸𝙻𝙴 𝚄𝚁𝙻 :** https://t.me/{(await bot.get_me()).username}?start=OpusTechz_{str(log_msg.message_id)}",
@@ -125,3 +124,5 @@ async def channel_receive_handler(bot, broadcast):
     except Exception as e:
         await bot.send_message(chat_id=Var.BIN_CHANNEL, text=f"**#ᴇʀʀᴏʀ_ᴛʀᴀᴄᴇʙᴀᴄᴋ:** `{e}`", disable_web_page_preview=True, parse_mode="Markdown")
         print(f"Cᴀɴ'ᴛ Eᴅɪᴛ Bʀᴏᴀᴅᴄᴀsᴛ Mᴇssᴀɢᴇ!\nEʀʀᴏʀ: {e}")
+
+@OpusTechz
