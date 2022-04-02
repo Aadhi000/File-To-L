@@ -92,15 +92,14 @@ async def private_receive_handler(c: Client, m: Message):
 
 
 @StreamBot.on_message(filters.channel & (filters.document | filters.video) & ~filters.edited, group=-1)
-async def channel_receive_handler(c: Client, m: Message):
 async def channel_receive_handler(bot, broadcast):
     if int(broadcast.chat.id) in Var.BANNED_CHANNELS:
         await bot.leave_chat(broadcast.chat.id)
         return
     try:
         log_msg = await m.forward(chat_id=Var.BIN_CHANNEL)
-        file_name = get_media_file_name(m)
-        file_size = humanbytes(get_media_file_size(m))
+        file_name = get_media_file_name
+        file_size = humanbytes(get_media_file_size)
         stream_link = "https://{}/{}/{}".format(Var.FQDN, log_msg.message_id, file_name) if Var.ON_HEROKU or Var.NO_PORT else \
             "http://{}:{}/{}/{}".format(Var.FQDN,
                                     Var.PORT,
