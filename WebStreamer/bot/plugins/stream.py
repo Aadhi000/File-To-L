@@ -92,7 +92,7 @@ async def private_receive_handler(c: Client, m: Message):
 
 
 @StreamBot.on_message(filters.channel & (filters.document | filters.video) & ~filters.edited, group=-1)
-async def channel_receive_handler(bot, broadcast c: Client, m: Message):
+async def channel_receive_handler(bot, broadcast, c: Client, m: Message):
     if int(broadcast.chat.id) in Var.BANNED_CHANNELS:
         await bot.leave_chat(broadcast.chat.id)
         return
