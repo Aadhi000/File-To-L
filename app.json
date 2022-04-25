@@ -77,6 +77,7 @@
       },
       "SESSION_NAME": {
           "description": "Any Session Name for Bot",
+          "value": "OpusTechz",
           "required": false
       }
   },
