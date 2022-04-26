@@ -1,7 +1,7 @@
 # This file is a part of TG-FileStreamBot
 # Coding : Jyothis Jayanth [@EverythingSuckz]
 
-from pyrogram import Client
+from pyrogram import client
 from ..vars import Var
 
 StreamBot = client(
