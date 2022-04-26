@@ -1,11 +1,12 @@
 # This file is a part of TG-FileStreamBot
 # Coding : Jyothis Jayanth [@EverythingSuckz]
 
-from pyrogram import client
+from pyrogram import Client
 from ..vars import Var
 
-StreamBot = client(
+StreamBot = Client(
     SESSION_NAME=Var.SESSION_NAME,
+    session_name='Web Stream',
     api_id=Var.API_ID,
     api_hash=Var.API_HASH,
     bot_token=Var.BOT_TOKEN,
